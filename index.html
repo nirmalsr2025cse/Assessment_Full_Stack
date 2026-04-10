@@ -11,9 +11,9 @@
     <h2><i class="fas fa-bug"></i> Bugify</h2>
     <ul>
         <li class="active"><i class="fas fa-home"></i> Home</li>
-        <li><i class="fas fa-folder-plus"></i> Create Project</li>
-        <li><i class="fas fa-clock"></i> Pending</li>
-        <li><i class="fas fa-check-circle"></i> Completed</li>
+        <li onclick="projects()"><i class="fas fa-folder"></i> Create Project</li>
+        <li onclick="pending()"><i class="fas fa-clock"></i> Pending</li>
+        <li onclick="completed()"><i class="fas fa-check-circle"></i> Completed</li>
     </ul>
 </div>
 <div class="main">
@@ -27,53 +27,62 @@
         </div>
         <div class="card pending">
             <h3>Pending</h3>
-            <p>6</p>
+            <p>5</p>
         </div>
         <div class="card completed">
             <h3>Completed</h3>
-            <p>15</p>
+            <p>1</p>
         </div>
     </div>
     <div class="create-section">
         <h2>Create New Project</h2>
         <br>
         <input type="text" placeholder="Create Project">
-        <button>Create</button>
+        <button onclick="Input()">Create</button>
     </div>
     <div class="pending-section" style="background-color: white; border-radius: 25px; padding: 30px;">
         <h2>Pending</h2>
 
         <div class="projects-grid">
-            <div class="p-card">
-                <img src="Bug.jpg" class="project-logo">
-                <h3>Project 1</h3>
-            </div>
-
-            <div class="p-card">
+            <div class="p-card" onclick="Input()">
                 <img src="Bug.jpg" class="project-logo">
                 <h3>Project 2</h3>
             </div>
 
-            <div class="p-card">
+            <div class="p-card" onclick="Input()">
                 <img src="Bug.jpg" class="project-logo">
                 <h3>Project 3</h3>
             </div>
-            <div class="p-card">
+            <div class="p-card" onclick="Input()">
                 <img src="Bug.jpg" class="project-logo">
                 <h3>Project 4</h3>
             </div>
 
-            <div class="p-card">
+            <div class="p-card" onclick="Input()">
                 <img src="Bug.jpg" class="project-logo">
                 <h3>Project 5</h3>
             </div>
 
-            <div class="p-card">
+            <div class="p-card" onclick="Input()">
                 <img src="Bug.jpg" class="project-logo">
-                <h3>Project </h3>
+                <h3>Project 6</h3>
             </div>
         </div>
     </div>
 </div>
+<script>
+function Input(){
+    window.location.href = "bug.html";
+}
+function projects(){
+    window.location.href = "project.html";
+}
+function pending(){
+    window.location.href = "pending.html";
+}
+function completed(){
+    window.location.href = "completed.html";
+}
+</script>
 </body>
 </html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bug Report</title>
+<link rel="icon" href="Bugify.png">
+<link rel="stylesheet" href="bug.css">
+</head>
+
+<body>
+
+<div class="form-container">
+
+    <h1>Bug Report Form</h1>
+    <p class="subtitle">Help us squash bugs by reporting them clearly and completely.</p>
+
+    <form>
+
+        <label>Your name *</label>
+        <input type="text" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="john@example.com">
+
+        <label>Page or feature *</label>
+        <input type="text" placeholder="e.g., Login Page">
+
+        <label>Describe the bug *</label>
+        <textarea placeholder="What happened?"></textarea>
+
+        <label>Steps to reproduce *</label>
+        <textarea placeholder="Step-by-step..."></textarea>
+
+        <label>Severity *</label>
+        <select>
+            <option>Low</option>
+            <option>Medium</option>
+            <option>High</option>
+        </select>
+
+        <label>Is this blocking your work?</label>
+        <div class="toggle">
+            <input type="checkbox"> <span>No</span>
+        </div>
+
+        <label>Console errors / links</label>
+        <textarea></textarea>
+
+        <label>Upload screenshot</label>
+        <input type="file">
+
+        <div class="confirm">
+            <input type="checkbox"> I confirm this report is accurate
+        </div>
+
+        <button type="submit" style="display: inline;">Submit Bug Report</button>
+    </form>
+    <button type="submit" style="display: inline; background-color: green; width: 267.5px;">Completed</button>
+    <button type="submit" style="display: inline; background-color: yellow; width:267.5px;">Pending</button>
+</div>
+
+</body>
+</html>
